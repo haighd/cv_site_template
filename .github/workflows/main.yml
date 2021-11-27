@@ -13,7 +13,7 @@ jobs:
       - name: ssh deploy
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
-          ARGS: -rltgoDzvO --exclude .git --exclude .github
+          ARGS: sudo -rltgoDzvO --exclude .git --exclude .github
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
           REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
           REMOTE_USER: ${{ secrets.DEPLOY_USER }}
