@@ -14,4 +14,4 @@ jobs:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_KEY }}
-          script: whoami
+          script: cd ${{ secrets.DEPLOY_PATH }} && sudo git pull && cd -
