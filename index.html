@@ -21,8 +21,20 @@
 	<script th:src="@{${cookieJs}}"></script>
 	<script th:src="@{/js/new_version_check.js}"></script>
 </head>
+<nav>
+	<h1>DAN HAIGHT</h1>
+	<ul class="navigation">
+	  <li><a href="#about" class="nav-link">About</a></li>
+	  <li><a href="#skills" class="nav-link">Skills</a></li>
+	  <li><a href="#projects" class="nav-link">Projects</a></li>
+	  <li><a href="#contact" class="nav-link">Contact</a></li>
+	</ul>
+	<button class="burger-menu" id="burger-menu">
+	  <ion-icon class="bars" name="menu-outline"></ion-icon>
+	</button>
+</nav>
 <body>
-	<nav>
+	<!-- <nav>
 		<h1>DAN HAIGHT</h1>
 		<ul class="navigation">
 		  <li><a href="#about" class="nav-link">About</a></li>
@@ -33,7 +45,7 @@
 		<button class="burger-menu" id="burger-menu">
 		  <ion-icon class="bars" name="menu-outline"></ion-icon>
 		</button>
-  	</nav>
+  	</nav> -->
 	<section class="hero" id="about">
 		<img
 		  src="assets/img/main.png"
@@ -44,11 +56,13 @@
 		<div class="bio animate__animated animate__shakeX">
 		  <h2 class="bio-title">Accelerating Data Insights</h2>
 		  <p class="bio-text">
-			Enabling World-class Organizations to acheive their mission, through problem-solving and analytical tool development.
+			Solving <strong>complex problems</strong>, engineering <strong>end-to-end analytics solutions</strong>, developing bespoke <strong>applications</strong>, and 
+			deploying customized business intelligence <strong>tools</strong>, enabling 
+			world-class organizations to <strong>accomplish their mission</strong>.
 		  </p>
 		</div>
   	</section>
-	<section class="more-about">
+	<section class="more-about" id="more-about">
 		<h2>More About Me</h2>
 		<p>
 		  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
@@ -133,78 +147,29 @@
 		</div>
 	</section>
 	<section class="contact" id="contact">
-		<h2>Get In Touch With Me</h2>
-		<div class="contact-form-container">
-		  <div class="contact-form">
-			<form action="https://formspree.io/f/xyylngw" method="POST">
-			  <div class="form-control">
-				<label for="name">Name</label>
-				<input
-				  type="text"
-				  id="name"
-				  name="sender-name"
-				  placeholder="Enter Your Name"
-				  class="input-field"
-				  required
-				/>
-			  </div>
-			  <div class="form-control">
-				<label for="email">Email</label>
-				<input
-				  type="email"
-				  id="email"
-				  name="sender-email"
-				  placeholder="Enter Your Email"
-				  class="input-field"
-				  required
-				/>
-			  </div>
-			  <div class="form-control">
-				<label for="message">Message</label>
-				<textarea
-				  id="message"
-				  cols="60"
-				  rows="10"
-				  placeholder="Enter Your Message"
-				  name="message"
-				  class="input-field"
-				  required
-				></textarea>
-			  </div>
-			  <input
-				type="submit"
-				value="Submit"
-				id="submit-btn"
-				class="submit-btn"
-			  />
-			</form>
-		  </div>
-		</div>
+		<h2>Get in Touch with Me....</h2>
+		<form class="contact-form-container" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+			<fieldset id="fs-frm-inputs">
+			  <label for="full-name">Full Name</label>
+			  <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+			  <label for="email-address">Email Address</label>
+			  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+			  <label for="message">Message</label>
+			  <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+			  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+			</fieldset>
+			<input type="submit" value="Submit">
+		  </form>
 	</section>
 	<div class="socials">
 		<a href="#" target="_blank"
-		  ><img
-			src="assets/icons/icons8-twitter-circled.gif"
-			alt="Twitter"
-			loading="lazy"
-			class="socicon"
-		/></a>
-		<a href="#" target="_blank"
-		  ><img
-			src="assets/icons/icons8-instagram.gif"
-			alt="Instagram"
-			loading="lazy"
-			class="socicon"
-		/></a>
-		<a href="#" target="_blank"
-		  ><img
-			src="assets/icons/icons8-linkedin-circled.gif"
+		  ><img src="https://img.icons8.com/color/48/000000/linkedin.png"
 			alt="Linkedin"
 			loading="lazy"
 			class="socicon"
 		/></a>
 		<a href="#" target="_blank"
-		  ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+		  ><img src="https://img.icons8.com/fluency/48/000000/github.png" alt="Github" class="socicon"
 		/></a>
 	</div>
 	<footer>
@@ -218,7 +183,7 @@
 	</footer>
 	<i class="scroll-up" id="scroll-up"
       ><img
-        src="assets/icons/icons8-upward-arrow.gif"
+        src="https://img.icons8.com/ultraviolet/40/000000/circled-up.png"
         class="socicon up-arrow"
         alt="scroll-up"
     /></i>
