@@ -30,18 +30,6 @@
 	</button>
 </nav>
 <body>
-	<!-- <nav>
-		<h1>DAN HAIGHT</h1>
-		<ul class="navigation">
-		  <li><a href="#about" class="nav-link">About</a></li>
-		  <li><a href="#skills" class="nav-link">Skills</a></li>
-		  <li><a href="#projects" class="nav-link">Projects</a></li>
-		  <li><a href="#contact" class="nav-link">Contact</a></li>
-		</ul>
-		<button class="burger-menu" id="burger-menu">
-		  <ion-icon class="bars" name="menu-outline"></ion-icon>
-		</button>
-  	</nav> -->
 	<section class="hero" id="about">
 		<img
 		  src="assets/img/main.png"
@@ -59,7 +47,7 @@
 		</div>
   	</section>
 	<section class="more-about" id="more-about">
-		<h2>More About Me</h2>
+		<h2>More About Dan</h2>
 		<p>
 		  Dan is passionate about helping others, whether developing RPA bots to automate tasks for his team-members, to building data pipelines
 		  between a variety of organizational data sources (e.g. SAP, data lake products, BlueYonder TMS web application, Manhattan WMS/IBM Cognos, etc.),
@@ -67,19 +55,32 @@
 		  working with a variety of organizations, from non-profit healthcare systems, to Fortune 4 publicly-owned businesses, having led Six Sigma/Process Improvement
 		  projects and Data Analytics projects, oftentimes resulting in over $1M annual hard-dollar cost benefit, for those organizations.
 		</p>
+		<section class="company-logos">
+			<img src=assets/img/quest_logo.png alt="" loading="lazy"/>
+			<img src=assets/img/uhg_logo.png alt="" loading="lazy"/>
+			<img src=assets/img/atlantichealthsystem_logo.png alt="" loading="lazy"/>
+			<img src=assets/img/SaintClaresHealth.png alt="" loading="lazy"/>
+			<img src=assets/img/Becton_Dickinson_Logo.png alt="" loading="lazy"/>
+			<img src=assets/img/hhs_logo.png alt="" loading="lazy"/>
+		</section>
 		<p>
 		  Dan holds a Master of Engineering in Healthcare Systems Engineering, from Lehigh University, as well as a Master of Science in Analaytics,
 		  from Georgia Institute of Technology.  Until recently, Dan also held a Paramedic certification, from the State of NJ, having provided critical
 		  care and advanced clinical interventions to the citizens of Northern New Jersey.  Dan often credits the 20 years he spent provided that care, 
 		  with fostering the development of his critical thinking skills, while exposing him to new experiences and learning opportunities. 
 		</p>
+		<section class="school-logos">
+			<img src=assets/img/Lehigh_University_Logo.png alt="" loading="lazy"/>
+			<img src=assets/img/gt_logo.png alt="" loading="lazy"/>
+			<img src=assets/img/tesc_logo2.png alt="" loading="lazy"/>
+		</section>
 		<p>
 		  When not hunched over a computer screen, Dan enjoys spending time woodworking, reading the latest fantasy epic, and spending time with 
 		  his wife and 3 dogs.
 		</p>
 	</section>
 	<section class="skills" id="skills">
-		<h2 class="skill-header">My Top Skills</h2>
+		<h2 class="skill-header">Dan's Top Skills</h2>
 		<div class="skills-wrapper">
 		  <div class="first-set animate__animated animate__pulse">
 			<img
@@ -163,7 +164,7 @@
 		</div>
 	</section>
 	<section class="contact" id="contact">
-		<h2>Get in Touch with Me....</h2>
+		<h2>Get in Touch with Dan....</h2>
 		<form class="contact-form-container" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
 			<fieldset id="fs-frm-inputs">
 			  <label for="full-name">Full Name</label>
@@ -195,14 +196,16 @@
 			  <a href="https://www.linkedin.com/in/djhaight" target="_blank"
 				>Dan Haight</a
 			  >
-			</p>
+			</p>		
 	</footer>
-	<i class="scroll-up" id="scroll-up"
+	<i id="back-to-top" class="fas fa-arrow-circle-up"></i>
+	<!-- <i id="back-to-top" class="fas fa-arrow-alt-circle-up"></i> -->
+	<!-- <i class="scroll-up" id="scroll-up"
       ><img
         src="https://img.icons8.com/ultraviolet/40/000000/circled-up.png"
         class="socicon up-arrow"
         alt="scroll-up"
-    /></i>
+    /></i> -->
 	<script th:src="@{${jqueryJs}}"></script>
 	<script th:src="@{${bootstrapJs}}"></script>
 	<script th:src="@{${cookieJs}}"></script>

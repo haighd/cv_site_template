@@ -18,6 +18,20 @@
 	--transition: 0.3s;
 }
   /* Variables end */
+
+#back-to-top {
+font-size: 18px !important;
+position: fixed;
+z-index: 9999;
+color: #e60000;
+cursor: pointer;
+bottom: 2em;
+right: 2em;
+text-decoration: none;
+transition: opacity 0.2s ease-out;
+opacity: 1;
+}
+
   
 html {
 	scroll-behavior: smooth;
@@ -149,6 +163,33 @@ nav ul li {
 	line-height: var(--line-height);
 	padding: 0.4rem;
 }
+
+.company-logos {
+	display: flex wrap;
+	justify-content: space-evenly;
+	align-content: baseline;
+}
+
+.company-logos img {
+	filter: brightness(0.5) invert(1) grayscale(100%);
+	min-height: 60px;
+  	max-width: 150px;
+  	object-fit:  scale-down;
+}
+
+.school-logos {
+	display: flex;
+	justify-content: space-evenly;
+	align-content: baseline;
+}
+
+.school-logos img {
+	filter: brightness(0.5) invert(1) grayscale(100%);
+	min-height: 60px;
+  	max-width: 150px;
+  	object-fit:  scale-down;
+}
+
   /* More about ends */
   
   /* Skills section */
@@ -269,6 +310,7 @@ nav ul li {
   /* Footer section */
 footer {
 	background-color: var(--bg-color);
+	color: var(--primary-color);
 	padding: 1.25rem;
 	text-align: center;
 	margin: 2rem 0 0;
